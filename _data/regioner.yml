@@ -1,0 +1,31 @@
+- title: Fyn
+  mailchimpID: 16
+  classID: fyn
+
+- title: Nordjylland
+  mailchimpID: 32
+  classID: nordjylland
+
+- title: Midt- og Vestjylland
+  mailchimpID: 64
+  classID: midt-og-vestjylland
+
+- title: Østjylland
+  mailchimpID: 128
+  classID: østjylland
+
+- title: Syd- og sønderjylland
+  mailchimpID: 256
+  classID: syd-og-sønderjylland
+
+- title: Nordsælland
+  mailchimpID: 512
+  classID: nordsjælland
+
+- title: Vestsjælland
+  mailchimpID: 1024
+  classID: vestsjælland
+
+- title: Bornholm
+  mailchimpID: 2048
+  classID: bornholm
