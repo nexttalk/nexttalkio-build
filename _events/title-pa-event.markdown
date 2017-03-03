@@ -1,6 +1,5 @@
 ---
 title: Title på event
-published: false
 firma_e-mail: hej@hanskristoffer.dk
 event_tema: Morgenmøde,Google
 event_beskrivelse: Lang beskrivelse
@@ -9,11 +8,11 @@ event_tilmeldingsfrist: 2017-03-16 00:00:00 Z
 event_beskrivelse-kort: 'Kort beskrivelse '
 firma_by: Odder
 event_title: Title på event
-firma_postnummer: '8300'
+firma_postnummer: 8300
 event_dato: 2017-03-09 14:20
 firma_region: Østjylland
 firma_firma-navn: Test firma
-firma_tlf-nr: '32997722'
+firma_tlf-nr: 32997722
 firma_adresse: Alrøvej 354
 event_tilmeld-link: https://www.google.dk/
 ---
