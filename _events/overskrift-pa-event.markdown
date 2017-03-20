@@ -15,7 +15,7 @@ event_beskrivelse: 'Contrary to popular belief, Lorem Ipsum is not simply random
 
 '
 firma_kontaktperson: Jens Hansen
-event_tilmeldingsfrist: 2017-03-22 00:00:00 Z
+event_tilmeldingsfrist: 2017-04-22 00:00:00 Z
 event_beskrivelse-kort: Lorem Ipsum has been the industry's standard dummy text ever
   since the 1500s, when an unknown printer took a galley of type and scrambled it
   to make a typ.
