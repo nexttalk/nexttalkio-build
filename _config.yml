@@ -1,46 +1,42 @@
-# Site
+---
 title: NextTalk
-description: På NextTalk.io finder du det næste foredrag, event, arrangement, webinar, netværksmøde, morgenmøde, gå-hjem-møde, workshop osv. Det er gratis at deltage i alle arrangementer, og det er gratis for arrangører at bruge NextTalk.io
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nexttalk.io" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Other
-typekit_id: #
-html_lang: en
-
-# Social
-twitter_username: #
-github_username:  #
-email: hej@nexttalk.io
-google_plus: #
-
-# Analytic
-google_analytic: UA-91821612-1
-facebook_pixelid: 1200965133318663
-
-# Collections
+timezone: UTC
 collections:
   events:
+    title: Events
     output: true
-    permalink: /events/:title:output_ext
-
-# Defaults
+    permalink: "/events/:title:output_ext"
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  - scope:
-      path: ""
-      type: events
-    values:
-      layout: event
-      cover_image: http://demo.nexttalk.io/assets/img/eventCover.jpg
-
-# Build settings
+- scope:
+    path: ''
+    type: events
+  values:
+    layout: event
+    cover_image: http://demo.nexttalk.io/assets/img/eventCover.jpg
+description: På NextTalk.io finder du det næste foredrag, event, arrangement, webinar,
+  netværksmøde, morgenmøde, gå-hjem-møde, workshop osv. Det er gratis at deltage i
+  alle arrangementer, og det er gratis for arrangører at bruge NextTalk.io
+baseurl: ''
+url: https://nexttalk.io
+typekit_id: 
+html_lang: en
+twitter_username: 
+github_username: 
+email: hej@nexttalk.io
+google_plus: 
+google_analytic: UA-91821612-1
+facebook_pixelid: 1200965133318663
 markdown: kramdown
 permalink: pretty
-
-gems:
-
+gems: 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - .deploy.sh
-  - "*.jade"
+- Gemfile
+- Gemfile.lock
+- ".deploy.sh"
+- "*.jade"
