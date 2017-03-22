@@ -1,0 +1,40 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Fyn - NextTalk</title>
+		<description>På NextTalk.io finder du det næste foredrag, event, arrangement, webinar, netværksmøde, morgenmøde, gå-hjem-møde, workshop osv. Det er gratis at deltage i alle arrangementer, og det er gratis for arrangører at bruge NextTalk.io</description>
+		<link>{{ site.url }}</link>
+		<atom:link href="{{ site.url }}/events" rel="self" type="application/rss+xml" />
+
+
+
+      {% assign events = site.events | sort:"event_dato"  %}
+
+      {% assign siteTime = site.time | date: "%d-%m-%Y"  %}
+
+      {% for event in events  %}
+
+      {% assign eventTilmeldingsfrist = event.event_tilmeldingsfrist | date: "%d-%m-%Y"  %}
+
+      {% if eventTilmeldingsfrist > siteTime %}
+      {% if event.firma_region == 'Østjylland' %}
+      {% assign temaer = event.event_tema | split: ","  %}
+			<item>
+				<title>{{ event.event_title }}</title>
+
+					<description>{{ event.event_beskrivelse-kort }}</description>
+					<description>{{ event.event_beskrivelse }}</description>
+          <description>{{ event.firma_region }}</description>
+          <description>{{ event.event_dato | date: "%H:%M" }}</description>
+
+				<pubDate>{{ event.event_tilmeldingsfrist | date_to_rfc822 }}</pubDate>
+				<link>{{ site.url }}{{ event.url }}</link>
+				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+			</item>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+	</channel>
+</rss>
