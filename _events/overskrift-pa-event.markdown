@@ -1,5 +1,6 @@
 ---
 title: Overskrift på event
+published: false
 firma_e-mail: abc@hotmail.com
 event_tema: Marketing,Tech
 event_beskrivelse: 'Contrary to popular belief, Lorem Ipsum is not simply random text.
