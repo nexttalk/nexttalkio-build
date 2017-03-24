@@ -1,6 +1,5 @@
 ---
 title: Title på event
-published: false
 firma_e-mail: hej@hanskristoffer.dk
 event_tema: Networking,Ledelse
 event_beskrivelse: Beksad asdasd qwe qwe a
