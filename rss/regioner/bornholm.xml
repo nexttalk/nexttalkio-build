@@ -10,7 +10,6 @@
 		<atom:link href="{{ site.url }}/events" rel="self" type="application/rss+xml" />
 
 
-
       {% assign events = site.events | sort:"event_dato"  %}
 
       {% assign siteTime = site.time | date: "%d-%m-%Y"  %}
