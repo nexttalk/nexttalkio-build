@@ -1,6 +1,5 @@
 ---
 title: Kom og vær med
-published: false
 firma_e-mail: christian@pro-bro.dk
 event_tema: Marketing
 event_title: Kom og vær med
