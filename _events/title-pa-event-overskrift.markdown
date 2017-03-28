@@ -1,6 +1,5 @@
 ---
 title: Title på event Overskrift
-published: false
 firma_e-mail: hej@hanskristoffer.dk
 event_tema: Marketing,Sociale medier
 event_title: Title på event Overskrift
