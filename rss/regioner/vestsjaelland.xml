@@ -8,16 +8,10 @@
 		<link>{{ site.url }}</link>
 		<atom:link href="{{ site.url }}/events" rel="self" type="application/rss+xml" />
 
-
-
-      {% assign events = site.events | sort:"event_dato"  %}
-
+			{% assign events = site.events | sort:"event_dato"  %}
       {% assign siteTime = site.time | date: "%d-%m-%Y"  %}
-
       {% for event in events  %}
-
       {% assign eventTilmeldingsfrist = event.event_tilmeldingsfrist | date: "%d-%m-%Y"  %}
-
       {% if eventTilmeldingsfrist > siteTime %}
       {% if event.firma_region == 'Vestsjælland' %}
       {% assign temaer = event.event_tema | split: ","  %}
