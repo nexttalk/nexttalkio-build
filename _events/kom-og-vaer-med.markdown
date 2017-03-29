@@ -12,11 +12,11 @@ event_beskrivelse: Her finder du de fleste gratis arrangementer i Danmark. Det e
   gratis at deltale, og NextTalk er gratis for arrangørerne at bruge.
 firma_kontaktperson: Christian Petersen
 event_startkl: '09:00'
-firma_tlf-nr: '42709019'
+firma_tlf-nr: 42709019
 event_dato: 2017-05-01 00:00:00 Z
 event_beskrivelse-kort: Kom og vær med. Spread the word!
 firma_region: Østjylland
 event_tilmeldingsfrist: 2017-04-20 00:00:00 Z
-event_tilmeld-link: nexttalk.io
+event_tilmeld-link: https://www.google.dk/
 ---
 
