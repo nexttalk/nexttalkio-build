@@ -1,9 +1,8 @@
 ---
 title: Tilmeld dig vores mailliste
-permalink: "/mailliste/"
+permalink: /mailliste/
 description: Få gratis events i din indbakke
 coverImage: eventCover.jpg
 layout: default
 ---
-
  <div id="indsend-succes" class="right-col animated fadeIn"><section><div style="background-image: url('/assets/img/indsendSucces.jpg')" class="header-cover"></div></section><section class="s-margin"><div class="c c-margin-top"><h2>Tilmeld dig vores mailliste og få gratis events i din indbakke</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><form action="//nexttalk.us15.list-manage.com/subscribe/post?u=847d97097338435644cfd2c27&amp;amp;id=154347ebbf" method="post"><div class="i-line"><input placeholder="For- og efternavn" type="text" value="" name="FNAME" id="mce-FNAME" class="l-width-50"/><input placeholder="E-mail" type="email" value="" name="EMAIL" id="mce-EMAIL" class="l-width-50"/></div><div class="i-line"><select name="group[1343]" id="mce-group[1343]" class="i l-width-70"><option value="">Vælg region</option>{% for region in site.data.regioner %}<option value="{{region.mailchimpID}}">{{region.title}}</option>{% endfor %}</select><div class="b b-color-primary l-width-30"><button type="submit" id="mc-embedded-subscribe" onClick="ga('send', 'event', 'Nyhedsmail', 'klik', 'Tilmeldt nyhedsmail: Mailliste side');" class="b-element mailliste-button-tilmeld"><span class="b-text">Tilmeld</span></button></div></div></form></div></section></div>
