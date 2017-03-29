@@ -1,11 +1,10 @@
 ---
 title: Alle events
-permalink: "/events/"
+permalink: /events/
 description: Vi har dit næste event
-coverImage: 
+coverImage: #
 layout: default
 ---
-
  <section id="events" class="right-col animated fadeIn"><div id="eventsListe" class="c"><div class="fixed-header"><div class="i-line"><select id="select-region" data-filter-group="region" class="i l-width-50"><option value="alle" data-filter-value="">Alle regioner</option>{% for region in site.data.regioner %}<option value=".{{region.title | replace: ' ', '-'}}" data-filter-value=".{{region.title | replace: ' ', '-'}}">{{region.title}}</option>{% endfor %}</select><select id="select-tema" data-filter-group="tema" class="i l-width-50"><option value="alle" data-filter-value="">Alle temaer</option>{% for tema in site.data.event-temaer %}<option value=".{{tema.title | replace: ' ', '-'}}" data-filter-value=".{{tema.title | replace: ' ', '-'}}">{{tema.title}}</option>{% endfor %}</select></div><hr/></div><div class="events-container"><p>Herunder finder du alle gratis events på NextTalk. De kan sorteres efter region og tema. Det er gratis at deltage i alle arrangementerne. Go' fornøjelse.</p><hr class="line-thin"/><div id="list-wrapper" class="list"><!-- Sorter events efter dato på event-->{% assign events = site.events | sort:"event_dato" %}<!-- Få generings dato. Bruges til tilmeldingsfristen-->{% assign siteTime = site.time | date: "%Y-%m-%d" %}<!-- Loop events-->{% for event in events  %}<!-- Filter events så der kun bliver vist dem der er inde for tilmeldingsfristen-->{% assign eventTilmeldingsfrist = event.event_tilmeldingsfrist | date: "%Y-%m-%d" %}
 {% if eventTilmeldingsfrist > siteTime %}
 {% assign temaer = event.event_tema | split: ","  %}<a href="{{ event.url }}" class="list-item {{ event.firma_region | replace: ' ', '-' }} {% for tema in temaer  %} {{ tema }} {% endfor %}"><p class="t-secondary t-caption t-faded t-weight-semibold eventDato">{{ event.event_dato | date: "%d. %B %Y" }}</p><div class="headline eventTitle">{{ event.event_title }}</div><p class="eventBeskrivelse">{{ event.event_beskrivelse-kort }}</p><div class="meta-tags-container"><div class="meta-tag"><i class="meta-icon fa fa-clock-o"></i><p class="meta-text">{{ event.event_startkl }}</p></div><div class="meta-tag"><i class="meta-icon fa fa-map-marker"></i><p class="meta-text event-sted">{{ event.firma_region }}, {{ event.firma_by }} </p></div><div class="meta-tag"><i class="meta-icon fa fa-tag"></i><p class="meta-text eventTag">{% for tema in temaer  %} {{ tema }} {% endfor %}</p></div></div><hr class="line-thin"/></a>{% endif %}
