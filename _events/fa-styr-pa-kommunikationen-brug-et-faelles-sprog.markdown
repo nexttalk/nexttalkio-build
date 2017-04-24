@@ -1,6 +1,5 @@
 ---
 title: Få styr på kommunikationen – brug et fælles sprog
-published: false
 firma_e-mail: kontakt@psvidenscenter.dk
 event_tema: Ledelse
 event_title: Få styr på kommunikationen – brug et fælles sprog
