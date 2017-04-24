@@ -1,15 +1,16 @@
 ---
 title: Få styr på kommunikationen – brug et fælles sprog
-published: false
 firma_e-mail: kontakt@psvidenscenter.dk
 event_tema: Ledelse
 event_title: Få styr på kommunikationen – brug et fælles sprog
 firma_by: Holbæk
 event_slutkl: '18:00'
-firma_postnummer: " 4300"
+firma_postnummer: 4300
 firma_firma-navn: 'PS Videnscenter '
 firma_adresse: 'Højvang 5 '
-event_beskrivelse: "Målgruppe\r"
+event_beskrivelse: 'Målgruppe
+
+'
 firma_kontaktperson: Mette Hansen
 event_startkl: '16:00'
 firma_tlf-nr: '9330 3093 '
