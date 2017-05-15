@@ -1,6 +1,5 @@
 ---
 title: OVERSKRIFT ABC
-published: false
 firma_e-mail: hej@hanskristoffer.dk
 event_tema: Networking,Tech
 event_title: OVERSKRIFT ABC
