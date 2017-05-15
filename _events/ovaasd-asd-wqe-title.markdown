@@ -1,6 +1,5 @@
 ---
 title: OVAasd asd wqe TITLE
-published: false
 firma_e-mail: hej@hanskristoffer.dk
 event_tema: Networking
 event_title: OVAasd asd wqe TITLE
